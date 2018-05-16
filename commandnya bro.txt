@@ -1,0 +1,3 @@
+rails g controller post index show edit destroy create update new
+rails g model post
+rake db:migrate
