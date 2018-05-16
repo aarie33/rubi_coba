@@ -1,0 +1,16 @@
+<!--<h1>Post#show</h1>-->
+<!--<p>Find me in app/views/post/show.html.erb</p>-->
+<div class="container">
+    <h1><%= @post.title %></h1><hr>
+    <div class="float-right">
+        <div>username</div>
+        <div><%= @post.created_at %></div>
+        <a href="/post/edit/<%= @post.id %>">
+            <span class="badge badge-danger">Edit</span>
+        </a>
+        <a href="/post/delete/<%= @post.id %>">
+            <span class="badge badge-warning">Hapus</span>
+        </a>
+    </div>
+    <p><%= @post.content %></p>
+</div>
